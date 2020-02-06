@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.multimedia.Fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentLZ77"
+            app:destination="@id/fragmentLZ77" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentLZW"
+            app:destination="@id/fragmentLZW" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentLZ78"
+            app:destination="@id/fragmentLZ78" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentArthimetic"
+            app:destination="@id/fragmentArthimetic" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentJPEG2"
+            app:destination="@id/fragmentJPEG" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLZ77"
+        android:name="com.example.multimedia.Fragments.FragmentLZ77"
+        android:label="LZ77"
+        tools:layout="@layout/fragment_lz77" />
+    <fragment
+        android:id="@+id/fragmentLZ78"
+        android:name="com.example.multimedia.Fragments.FragmentLZ78"
+        android:label="LZ78"
+        tools:layout="@layout/fragment_lz78" />
+    <fragment
+        android:id="@+id/fragmentLZW"
+        android:name="com.example.multimedia.Fragments.FragmentLZW"
+        android:label="LZW"
+        tools:layout="@layout/fragment_lzw" />
+    <fragment
+        android:id="@+id/fragmentArthimetic"
+        android:name="com.example.multimedia.Fragments.FragmentArthimetic"
+        android:label="fragment_arthimetic"
+        tools:layout="@layout/fragment_arthimetic" />
+    <fragment
+        android:id="@+id/fragmentJPEG"
+        android:name="com.example.multimedia.Fragments.FragmentJPEG"
+        android:label="JPEG"
+        tools:layout="@layout/fragment_jpeg" />
+</navigation>
