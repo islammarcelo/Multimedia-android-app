@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class LZ78 implements Operation {
 
-    public ArrayList<Pair> pair = new ArrayList<Pair>();
+    public ArrayList<Pair<Integer,Character>> pair = new ArrayList<>();
     public ArrayList<String> dict = new ArrayList<String>();
 
     public String result = "";
@@ -76,8 +76,8 @@ public class LZ78 implements Operation {
 
 
         for (int i = 0; i < pair.size(); i++) {
-            int key = pair.get(i).getKey();
-            String value = Character.toString(pair.get(i).getValue());
+            int key = pair.get(i).getPositive();
+            String value = Character.toString(pair.get(i).getNegative());
 
             if (key == 0) {
                 dict.add(value);

@@ -22,6 +22,7 @@
                 android:textSize="30dp"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/dic_lzw_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
@@ -40,6 +41,7 @@
                 android:textSize="30dp"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/index_lzw_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
@@ -58,6 +60,7 @@
                 android:textSize="30dp"
                 android:layout_gravity="center"/>
             <TextView
+                android:id="@+id/decode_lzw_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="25dp"
@@ -71,6 +74,7 @@
                 android:padding="3dp"/>
 
             <EditText
+                android:id="@+id/lzw_et"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:padding="3dp"
@@ -94,6 +98,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
                 <Button
+                    android:id="@+id/compress_lzw_bt"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@drawable/shadow"
@@ -107,6 +112,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
                 <Button
+                    android:id="@+id/decompress_lzw_bt"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@drawable/shadow"

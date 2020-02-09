@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.multimedia.R;
 
@@ -51,7 +52,8 @@ public class HomeFragment extends Fragment{
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_homeFragment_to_fragmentLZ77);
+               // navController.navigate(R.id.action_homeFragment_to_fragmentLZ77);
+                Toast.makeText(getActivity(),"The algorithm not complete :)",Toast.LENGTH_SHORT).show();
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
@@ -63,13 +65,15 @@ public class HomeFragment extends Fragment{
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_homeFragment_to_fragmentLZW);
+               // navController.navigate(R.id.action_homeFragment_to_fragmentLZW);
+                Toast.makeText(getActivity(),"The algorithm not complete :)",Toast.LENGTH_SHORT).show();
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_homeFragment_to_fragmentArthimetic);
+                //navController.navigate(R.id.action_homeFragment_to_fragmentArthimetic);
+                Toast.makeText(getActivity(),"The algorithm not complete :)",Toast.LENGTH_SHORT).show();
             }
         });
         button5.setOnClickListener(new View.OnClickListener() {

@@ -18,6 +18,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.multimedia.Class.LZ78;
+import com.example.multimedia.Interface.Operation;
 import com.example.multimedia.R;
 
 public class FragmentLZ78 extends Fragment {
@@ -45,7 +46,7 @@ public class FragmentLZ78 extends Fragment {
         textViewDecode = view.findViewById(R.id.decode_78_tv);
         compress       = view.findViewById(R.id.compress_78_bt);
         deCompress     = view.findViewById(R.id.decompress_78_bt);
-        lz78 = new LZ78();
+        lz78 =  new LZ78();
 
         compress.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,7 +121,7 @@ public class FragmentLZ78 extends Fragment {
             }
         }
         for (int i = 0; i < lz78.pair.size(); i++) {
-                textViewTags.append("<"+" "+ lz78.pair.get(i).getKey() +" "+ "," +" "+lz78.pair.get(i).getValue() +" "+ ">"+" ");
+                textViewTags.append("<"+" "+ lz78.pair.get(i).getPositive() +" "+ "," +" "+lz78.pair.get(i).getNegative() +" "+ ">"+" ");
         }
     }
 
