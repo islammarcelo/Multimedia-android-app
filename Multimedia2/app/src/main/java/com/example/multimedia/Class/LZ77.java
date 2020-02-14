@@ -3,14 +3,17 @@ package com.example.multimedia.Class;
 import java.util.ArrayList;
 
 public class LZ77 {
-    static ArrayList<Pair2> encode = new ArrayList<>();
+    static public ArrayList<Pair2> encode = new ArrayList<>();
 
-    static ArrayList<String> decode = new ArrayList<>();
+    static public ArrayList<String> decode = new ArrayList<>();
 
-    public static void compress(ArrayList<String> data){
+    public static void compress(String input){
         int pos1 = 0; int indexText = 0; int position = 0;int counter = 0;
         String nextSymbol; String str; String text = "";
-
+        ArrayList<String> data = new ArrayList<>();
+        for (int i = 0; i < input.length(); i++) {
+           data.add(input.charAt(i) + "");
+        }
         for(int i = 1 ; i <= data.size() ; i++){
             pos1 = i;
             if (i == 1){
@@ -74,10 +77,5 @@ public class LZ77 {
         if(next.contains("NULL")){ return; }
         decode.add(next);
     }
-    public static void print(){
-        for (int i = 0 ; i < decode.size() ; i++){
 
-            System.out.print(decode.get(i));
-        }
-    }
 }

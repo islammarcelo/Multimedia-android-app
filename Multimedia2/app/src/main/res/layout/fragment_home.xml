@@ -76,7 +76,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:background="@drawable/shadow"
-                android:text="Standerd Huffman"
+                android:text="Standard Huffman"
                 android:textAllCaps="false"
                 android:elevation="30dp"
                 android:layout_marginTop="40dp"

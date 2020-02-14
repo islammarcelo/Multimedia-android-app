@@ -8,6 +8,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -16,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.multimedia.Class.JPEG;
+import com.example.multimedia.Class.LZ78;
 import com.example.multimedia.R;
 
 /**
@@ -83,5 +87,37 @@ public class FragmentJPEG extends Fragment {
             }
         });
         super.onViewCreated(view, savedInstanceState);
+    }
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        inflater.inflate(R.menu.menu,menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.reset) {
+            textViewEncode.setText("");
+            textViewDecode.setText("");
+            editText.setText("");
+            jpeg.decompress.clear();
+            jpeg.compress.clear();
+            jpeg.decimal.clear();
+            jpeg.probabilities .clear();
+            jpeg.huffmanTable .clear();
+            jpeg.descriptor .clear();
+            jpeg = new JPEG();
+
+
+            Toast.makeText(getActivity(),"Reset is clicked",Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

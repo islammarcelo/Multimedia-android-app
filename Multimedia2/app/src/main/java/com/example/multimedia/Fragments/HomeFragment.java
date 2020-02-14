@@ -52,8 +52,8 @@ public class HomeFragment extends Fragment{
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // navController.navigate(R.id.action_homeFragment_to_fragmentLZ77);
-                Toast.makeText(getActivity(),"The algorithm not complete :)",Toast.LENGTH_SHORT).show();
+                navController.navigate(R.id.action_homeFragment_to_fragmentLZ77);
+
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
@@ -72,8 +72,8 @@ public class HomeFragment extends Fragment{
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //navController.navigate(R.id.action_homeFragment_to_fragmentArthimetic);
-                Toast.makeText(getActivity(),"The algorithm not complete :)",Toast.LENGTH_SHORT).show();
+                navController.navigate(R.id.action_homeFragment_to_fragmentArthimetic);
+                //Toast.makeText(getActivity(),"The algorithm not complete :)",Toast.LENGTH_SHORT).show();
             }
         });
         button5.setOnClickListener(new View.OnClickListener() {

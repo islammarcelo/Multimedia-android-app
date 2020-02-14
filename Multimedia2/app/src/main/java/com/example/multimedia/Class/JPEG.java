@@ -6,10 +6,10 @@ import java.util.ArrayList;
 
 public class JPEG {
     static ArrayList<Pair<String,String>> categoriesTable = new ArrayList<>();
-    static ArrayList<Pair<String,String>> descriptor      = new ArrayList<>();
-    static ArrayList<String> decimal      = new ArrayList<String>();
-    static ArrayList<Node> probabilities   = new ArrayList<>();
-    static ArrayList<Node> huffmanTable    = new ArrayList<>();
+    public static ArrayList<Pair<String,String>> descriptor      = new ArrayList<>();
+    static public ArrayList<String> decimal      = new ArrayList<String>();
+    static public ArrayList<Node> probabilities   = new ArrayList<>();
+    public static ArrayList<Node> huffmanTable    = new ArrayList<>();
     static public ArrayList<Pair<String,String>> compress = new ArrayList<>();
     static public ArrayList<String> decompress = new ArrayList<>();
 

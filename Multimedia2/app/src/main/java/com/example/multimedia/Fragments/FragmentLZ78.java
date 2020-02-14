@@ -128,7 +128,7 @@ public class FragmentLZ78 extends Fragment {
     private void decode() {
         lz78.decompress();
         textViewDict.setText("");
-        textViewTags.setText("");
+        //textViewTags.setText("");
 
         for (int i = 0; i < lz78.dict.size(); i++) {
             if (i + 1 >= lz78.dict.size()) {
