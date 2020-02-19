@@ -18,8 +18,15 @@
             android:layout_height="0dp"
             android:gravity="top"
             android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"/>
+
 
             <EditText
+                android:id="@+id/char_et"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:padding="3dp"
@@ -29,8 +36,9 @@
                 android:elevation="20dp"
                 android:textColor="#fff"
                 android:maxLength="35"
-                android:layout_marginTop="120dp"/>
+                android:layout_marginTop="80dp"/>
             <EditText
+                android:id="@+id/pro_et"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:padding="3dp"
@@ -42,6 +50,7 @@
                 android:maxLength="35"
                 android:layout_marginTop="20dp"/>
             <EditText
+                android:id="@+id/text_et"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:padding="3dp"
@@ -65,7 +74,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
                 <Button
-                    android:id="@+id/compress_78_bt"
+                    android:id="@+id/compress_arth_bt"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@drawable/shadow"
@@ -80,7 +89,7 @@
                 android:layout_weight="1"
                 android:gravity="center">
                 <Button
-                    android:id="@+id/decompress_78_bt"
+                    android:id="@+id/decompress_arth_bt"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@drawable/shadow"
@@ -101,14 +110,13 @@
         android:gravity="center">
 
         <Button
-
-            android:layout_width="300dp"
+            android:id="@+id/steps_bt"
+            android:layout_width="275dp"
             android:layout_height="70dp"
             android:background="@drawable/shadow"
-            android:text="Steps"
-            android:textAllCaps="false"
             android:elevation="30dp"
-            />
+            android:text="Steps"
+            android:textAllCaps="false" />
     </LinearLayout>
 
     </LinearLayout>

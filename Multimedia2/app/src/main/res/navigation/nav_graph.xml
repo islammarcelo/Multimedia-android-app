@@ -44,11 +44,20 @@
     <fragment
         android:id="@+id/fragmentArthimetic"
         android:name="com.example.multimedia.Fragments.FragmentArthimetic"
-        android:label="fragment_arthimetic"
-        tools:layout="@layout/fragment_arthimetic" />
+        android:label="Arithmetic Coding"
+        tools:layout="@layout/fragment_arthimetic" >
+        <action
+            android:id="@+id/action_fragmentArthimetic_to_steps"
+            app:destination="@id/steps" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentJPEG"
         android:name="com.example.multimedia.Fragments.FragmentJPEG"
         android:label="JPEG"
         tools:layout="@layout/fragment_jpeg" />
+    <fragment
+        android:id="@+id/steps"
+        android:name="com.example.multimedia.Fragments.Steps"
+        android:label="Steps"
+        tools:layout="@layout/fragment_steps" />
 </navigation>
