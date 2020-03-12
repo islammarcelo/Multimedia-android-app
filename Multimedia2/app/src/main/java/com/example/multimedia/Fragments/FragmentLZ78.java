@@ -30,6 +30,7 @@ public class FragmentLZ78 extends Fragment {
     Button compress , deCompress;
     LZ78 lz78;
     String text;
+    Operation operation;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -48,6 +49,7 @@ public class FragmentLZ78 extends Fragment {
         deCompress     = view.findViewById(R.id.decompress_78_bt);
         lz78 =  new LZ78();
 
+
         compress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,6 +65,7 @@ public class FragmentLZ78 extends Fragment {
 
 
         });
+
 
 
         deCompress.setOnClickListener(new View.OnClickListener() {
